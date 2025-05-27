@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card shadow-sm">
+  <div class="card-header text-center">
+    <h2>Solar Energy Prediction</h2>
+  </div>
+  <div class="card-body">
+    <form method="post" class="row g-3">
+      <div class="col-md-6">
+        <label class="form-label">Hour</label>
+        <input name="hour" type="number" class="form-control" min="0" max="23" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Temperature (°C)</label>
+        <input name="temp" type="number" class="form-control" step="0.1" required>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-success">Predict</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card shadow-sm">
+  <div class="card-header text-center"><h2>Diabetes Detection</h2></div>
+  <div class="card-body">
+    <form method="post" class="row g-3">
+      {% for f in ["Glucose","BloodPressure","BMI","Age","Insulin"] %}
+      <div class="col-md-6">
+        <label class="form-label">{{ f }}</label>
+        <input name="{{ f }}" type="number" class="form-control" step="any" required>
+      </div>
+      {% endfor %}
+      <div class="col-12 text-center"><button type="submit" class="btn btn-success">Predict</button></div>
+    </form>
+  </div>
+</div>
+{% endblock %}

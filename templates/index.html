@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="text-center mb-5">
+  <h1 class="display-4 fw-bold">ML Projects Dashboard</h1>
+  <p class="lead">Choose one of the awesome projects below</p>
+</div>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card card-custom h-100 shadow-sm">
+      <div class="card-body text-center p-4">
+        <h5 class="card-title fw-bold">Solar Energy Prediction</h5>
+        <p class="card-text">Predict kWh output from hour & temperature.</p>
+        <a href="/linear" class="btn btn-dark">Launch</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-custom h-100 shadow-sm">
+      <div class="card-body text-center p-4">
+        <h5 class="card-title fw-bold">Diabetes Detection</h5>
+        <p class="card-text">Classify diabetes risk from health metrics.</p>
+        <a href="/logistic" class="btn btn-dark">Launch</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-custom h-100 shadow-sm">
+      <div class="card-body text-center p-4">
+        <h5 class="card-title fw-bold">Voice Gender Classification</h5>
+        <p class="card-text">Identify gender from voice features.</p>
+        <a href="/knn" class="btn btn-dark">Launch</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-custom h-100 shadow-sm">
+      <div class="card-body text-center p-4">
+        <h5 class="card-title fw-bold">Spam Detection</h5>
+        <p class="card-text">Detect spam vs ham messages.</p>
+        <a href="/naive" class="btn btn-dark">Launch</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

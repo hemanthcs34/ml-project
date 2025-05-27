@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card text-center shadow-sm">
+  <div class="card-body">
+    <h2>Prediction Result</h2>
+    <p class="fs-4">Hour {{ hour }}, Temp {{ temp }}°C → <strong>{{ prediction }} kWh</strong></p>
+    <a href="/linear" class="btn btn-secondary">Back</a>
+  </div>
+</div>
+{% endblock %}
