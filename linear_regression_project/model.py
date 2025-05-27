@@ -1,9 +1,12 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
+import os
 
-df = pd.read_csv("linear_regression_project/data.csv")
-X = df[["Hour","Temperature"]]
-y = df["Energy_kWh"]
+BASE = os.path.dirname(__file__)
+df = pd.read_csv(os.path.join(BASE, "data.csv"))
+
+X = df[["hour", "temp"]]
+y = df["energy"]
 model = LinearRegression().fit(X, y)
 
 def predict_energy(hour, temp):
