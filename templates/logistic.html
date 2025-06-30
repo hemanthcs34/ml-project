@@ -4,27 +4,27 @@
   <div class="card-header text-center"><h2>Diabetes Detection</h2></div>
   <div class="card-body">
     <form method="post" class="row g-3">
-      <!-- Glucose slider -->
+   
       <div class="col-md-6">
         <label for="Glucose" class="form-label">Glucose: <span id="glucoseVal">85</span></label>
         <input name="Glucose" id="Glucose" type="range" min="50" max="200" step="1" value="85" class="form-range" oninput="glucoseVal.innerText = this.value" required>
       </div>
-      <!-- BloodPressure slider -->
+      
       <div class="col-md-6">
         <label for="BloodPressure" class="form-label">BloodPressure: <span id="bpVal">60</span></label>
         <input name="BloodPressure" id="BloodPressure" type="range" min="40" max="100" step="1" value="60" class="form-range" oninput="bpVal.innerText = this.value" required>
       </div>
-      <!-- BMI slider -->
+  
       <div class="col-md-6">
         <label for="BMI" class="form-label">BMI: <span id="bmiVal">25.0</span></label>
         <input name="BMI" id="BMI" type="range" min="15" max="60" step="0.1" value="25.0" class="form-range" oninput="bmiVal.innerText = this.value" required>
       </div>
-      <!-- Age slider -->
+      
       <div class="col-md-6">
         <label for="Age" class="form-label">Age: <span id="ageVal">30</span></label>
         <input name="Age" id="Age" type="range" min="10" max="100" step="1" value="30" class="form-range" oninput="ageVal.innerText = this.value" required>
       </div>
-      <!-- Insulin slider -->
+      
       <div class="col-md-6">
         <label for="Insulin" class="form-label">Insulin: <span id="insulinVal">90</span></label>
         <input name="Insulin" id="Insulin" type="range" min="15" max="300" step="1" value="90" class="form-range" oninput="insulinVal.innerText = this.value" required>
